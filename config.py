@@ -1,23 +1,25 @@
-from os import getenv
 import os
+from os import getenv
 
-from dotenv import load_dotenv
-load_dotenv()
+API_ID = int(getenv("API_ID"))
+API_HASH = getenv("API_HASH")
+BOT_TOKEN = getenv("BOT_TOKEN")
 
-API_ID = int(getenv("API_ID", None))
-API_HASH = getenv("API_HASH", None)
-BOT_TOKEN = getenv("BOT_TOKEN", None)
-OWNER_ID = int(getenv("OWNER_ID", None))
-MONGO_URL = getenv("MONGO_URL", None)
-AUTH_CHANNEL = int(getenv("AUTH_CHANNEL", None))
-FSUB = getenv("FSUB", False)
-OWNER_ID = int(getenv("OWNER_ID", None))
-OWNER = 7995588921
-LOGGER_GROUP_ID = -1003165073656
-BOT_NAME = os.environ.get("BOT_NAME","shree")
-BOT_USERNAME = os.environ.get("BOT_USERNAME", "Sonalichatbot")
-SUPPORT_GROUP = os.environ.get("SUPPORT_GROUP", "promoters_botse")
-UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "promoters_botse)
+OWNER_ID = int(getenv("OWNER_ID"))
+OWNER = OWNER_ID
+
+MONGO_URL = getenv("MONGO_URL")
+
+# ALWAYS STRING (username based)
+AUTH_CHANNEL = getenv("AUTH_CHANNEL")          # promoters_botse
+LOGGER_GROUP_ID = getenv("LOGGER_GROUP_ID")    # promoters_botse
+SUPPORT_GROUP = getenv("SUPPORT_GROUP")        # promoters_botse
+UPDATES_CHANNEL = getenv("UPDATES_CHANNEL")    # promoters_botse
+
+FSUB = getenv("FSUB", "False").lower() == "true"
+
+BOT_NAME = getenv("BOT_NAME", "shree")
+BOT_USERNAME = getenv("BOT_USERNAME", "Sonalichatbot")
 
 STICKER = [
 "CAACAgUAAxkBAAKV2Ge_HEejUGb8foZZ9eunAivt46rNAAL9EQAC-EXwV3yNmpSjijuwHgQ",
