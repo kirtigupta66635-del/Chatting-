@@ -12,12 +12,12 @@ MONGO_URL = getenv("MONGO_URL", None)
 AUTH_CHANNEL = int(getenv("AUTH_CHANNEL", None))
 FSUB = getenv("FSUB", False)
 OWNER_ID = int(getenv("OWNER_ID", None))
-OWNER = 8143754205
-LOGGER_GROUP_ID = -1002043788670
-BOT_NAME = os.environ.get("BOT_NAME","𝐒‌‌σ፝֠֩‌ηᴧℓɪ")
+OWNER = 7995588921
+LOGGER_GROUP_ID = -1003165073656
+BOT_NAME = os.environ.get("BOT_NAME","shree")
 BOT_USERNAME = os.environ.get("BOT_USERNAME", "Sonalichatbot")
-SUPPORT_GROUP = os.environ.get("SUPPORT_GROUP", "PURVI_SUPPORT")
-UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "PURVI_SUPPORT")
+SUPPORT_GROUP = os.environ.get("SUPPORT_GROUP", "promoters_botse")
+UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "promoters_botse)
 
 STICKER = [
 "CAACAgUAAxkBAAKV2Ge_HEejUGb8foZZ9eunAivt46rNAAL9EQAC-EXwV3yNmpSjijuwHgQ",
